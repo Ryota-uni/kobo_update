@@ -29,14 +29,14 @@
   .bar-bg { height: 10px; background: var(--barbg); border-radius: 999px; overflow:hidden; border:1px solid #eaeaea; }
   .bar { height:100%; background: var(--bar); }
   .pct { font-size: 12px; color: var(--muted); margin-top: 6px; text-align:right; font-variant-numeric: tabular-nums; }
-  .footer { display:flex; justify-content:space-between; align-items:center; gap:12px; padding: 12px 14px; color: var(--muted); font-size: 13px; }
+  .footer { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; padding: 12px 14px; color: var(--muted); font-size: 13px; }
 </style>
 </head>
 <body>
   <div class="wrap">
     <header>
       <h1>Zambia Survey Progress（camp別）</h1>
-      <div class="meta">Last updated: 2026-02-27 06:37 UTC</div>
+      <div class="meta">Last updated: 2026-02-27 06:57 UTC</div>
     </header>
 
     <div class="card">
@@ -45,35 +45,13 @@
           <tr>
             <th>Camp</th>
             <th style="text-align:right;">Target</th>
-            <th style="text-align:right;">Collected（unique sec0_farmerid）</th>
+            <th style="text-align:right;">Collected（unique farmerid）</th>
             <th style="text-align:right;">Remaining</th>
             <th>Progress</th>
           </tr>
         </thead>
         <tbody>
           
-        <tr class="behind">
-          <td class="camp">Katuta</td>
-          <td class="num">40</td>
-          <td class="num">0</td>
-          <td class="num">40</td>
-          <td class="progress">
-            <div class="bar-bg"><div class="bar" style="width:0.0%"></div></div>
-            <div class="pct">0.0%</div>
-          </td>
-        </tr>
-        
-        <tr class="behind">
-          <td class="camp">Lukwesa</td>
-          <td class="num">40</td>
-          <td class="num">0</td>
-          <td class="num">40</td>
-          <td class="progress">
-            <div class="bar-bg"><div class="bar" style="width:0.0%"></div></div>
-            <div class="pct">0.0%</div>
-          </td>
-        </tr>
-        
         <tr class="behind">
           <td class="camp">Monga</td>
           <td class="num">40</td>
@@ -98,17 +76,6 @@
         
         <tr class="behind">
           <td class="camp">Kanengo</td>
-          <td class="num">20</td>
-          <td class="num">0</td>
-          <td class="num">20</td>
-          <td class="progress">
-            <div class="bar-bg"><div class="bar" style="width:0.0%"></div></div>
-            <div class="pct">0.0%</div>
-          </td>
-        </tr>
-        
-        <tr class="behind">
-          <td class="camp">Mabumba</td>
           <td class="num">20</td>
           <td class="num">0</td>
           <td class="num">20</td>
@@ -151,12 +118,46 @@
           </td>
         </tr>
         
+        <tr class="behind">
+          <td class="camp">Lukwesa</td>
+          <td class="num">40</td>
+          <td class="num">1</td>
+          <td class="num">39</td>
+          <td class="progress">
+            <div class="bar-bg"><div class="bar" style="width:2.5%"></div></div>
+            <div class="pct">2.5%</div>
+          </td>
+        </tr>
+        
+        <tr class="behind">
+          <td class="camp">Katuta</td>
+          <td class="num">40</td>
+          <td class="num">10</td>
+          <td class="num">30</td>
+          <td class="progress">
+            <div class="bar-bg"><div class="bar" style="width:25.0%"></div></div>
+            <div class="pct">25.0%</div>
+          </td>
+        </tr>
+        
+        <tr class="behind">
+          <td class="camp">Mabumba</td>
+          <td class="num">20</td>
+          <td class="num">8</td>
+          <td class="num">12</td>
+          <td class="progress">
+            <div class="bar-bg"><div class="bar" style="width:40.0%"></div></div>
+            <div class="pct">40.0%</div>
+          </td>
+        </tr>
+        
         </tbody>
       </table>
       <div class="footer">
         <div>
-          missing camp rows: <b>19</b> /
-          missing farmerid rows: <b>19</b>
+          <div>missing camp rows: <b>0</b></div>
+          <div>missing farmerid rows: <b>0</b></div>
+          
         </div>
         <div><a href="./progress.csv">CSV</a></div>
       </div>
