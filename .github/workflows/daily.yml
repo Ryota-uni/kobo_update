@@ -30,7 +30,7 @@ jobs:
           KOBO_BASE_URL: ${{ secrets.KOBO_BASE_URL }}
           KOBO_TOKEN: ${{ secrets.KOBO_TOKEN }}
           KOBO_ASSET_UID: ${{ secrets.KOBO_ASSET_UID }}
-        run: uv run python src/build_progress.py
+        run: uv run python src/luapula_progress.py
 
       - name: Commit & push if changed
         run: |
