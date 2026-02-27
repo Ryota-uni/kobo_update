@@ -25,12 +25,19 @@ jobs:
       - name: Install dependencies
         run: uv sync --frozen
 
-      - name: Run progress builder
+      - name: Run Luapula
         env:
           KOBO_BASE_URL: ${{ secrets.KOBO_BASE_URL }}
           KOBO_TOKEN: ${{ secrets.KOBO_TOKEN }}
-          KOBO_ASSET_UID: ${{ secrets.LUAPULA_ASSET_UID }}
+          LUAPULA_ASSET_UID: ${{ secrets.LUAPULA_ASSET_UID }}
         run: uv run python src/luapula_progress.py
+
+      - name: Run Western
+        env:
+          KOBO_BASE_URL: ${{ secrets.KOBO_BASE_URL }}
+          KOBO_TOKEN: ${{ secrets.KOBO_TOKEN }}
+          WESTERN_ASSET_UID: ${{ secrets.WESTERN_ASSET_UID }}
+        run: uv run python src/western_progress.py
 
       - name: Commit & push if changed
         run: |
