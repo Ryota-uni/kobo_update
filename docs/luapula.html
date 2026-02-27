@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Zambia Survey Progress</title>
+<style>
+  :root {
+    --fg:#111; --muted:#666; --bg:#fff; --line:#e6e6e6;
+    --bar:#111; --barbg:#f2f2f2;
+    --behind:#fff7ed; --done:#f6ffed;
+    --shadow: 0 8px 24px rgba(0,0,0,.06);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
+  }
+  body { margin:0; color:var(--fg); background:#fafafa; }
+  .wrap { max-width: 1100px; margin: 32px auto; padding: 0 16px; }
+  header { display:flex; justify-content:space-between; align-items:flex-end; gap:16px; margin-bottom: 12px; }
+  h1 { font-size: 20px; margin:0; }
+  .meta { color: var(--muted); font-size: 13px; white-space: nowrap; }
+  .card { background: var(--bg); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); overflow:hidden; }
+  table { width:100%; border-collapse: collapse; }
+  thead th { text-align:left; font-size: 13px; color: var(--muted); padding: 12px 14px; border-bottom:1px solid var(--line); background:#fcfcfc; position:sticky; top:0; }
+  tbody td { padding: 12px 14px; border-bottom: 1px solid var(--line); font-size: 14px; }
+  tbody tr.behind { background: var(--behind); }
+  tbody tr.done { background: var(--done); }
+  td.num { text-align:right; font-variant-numeric: tabular-nums; width: 90px; }
+  td.camp { font-weight: 600; }
+  td.progress { width: 240px; }
+  .bar-bg { height: 10px; background: var(--barbg); border-radius: 999px; overflow:hidden; border:1px solid #eaeaea; }
+  .bar { height:100%; background: var(--bar); }
+  .pct { font-size: 12px; color: var(--muted); margin-top: 6px; text-align:right; font-variant-numeric: tabular-nums; }
+  .footer { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; padding: 12px 14px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Luapula Survey Progress</h1>
+      <div class="meta">Last updated: 2026-02-27 08:03 UTC</div>
+    </header>
+
+    <div class="card">
+      <table>
+        <thead>
+          <tr>
+            <th>Camp</th>
+            <th style="text-align:right;">Target</th>
+            <th style="text-align:right;">Collected</th>
+            <th style="text-align:right;">Remaining</th>
+            <th>Progress</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        <tr class="behind">
+          <td class="camp">Monga</td>
+          <td class="num">40</td>
+          <td class="num">0</td>
+          <td class="num">40</td>
+          <td class="progress">
+            <div class="bar-bg"><div class="bar" style="width:0.0%"></div></div>
+            <div class="pct">0.0%</div>
+          </td>
+        </tr>
+        
+        <tr class="behind">
+          <td class="camp">Kabalenge</td>
+          <td class="num">30</td>
+          <td class="num">0</td>
+          <td class="num">30</td>
+          <td class="progress">
+            <div class="bar-bg"><div class="bar" style="width:0.0%"></div></div>
+            <div class="pct">0.0%</div>
+          </td>
+        </tr>
+        
+        <tr class="behind">
+          <td class="camp">Kanengo</td>
+          <td class="num">20</td>
+          <td class="num">0</td>
+          <td class="num">20</td>
+          <td class="progress">
+            <div class="bar-bg"><div class="bar" style="width:0.0%"></div></div>
+            <div class="pct">0.0%</div>
+          </td>
+        </tr>
+        
+        <tr class="behind">
+          <td class="camp">Chibondo</td>
+          <td class="num">10</td>
+          <td class="num">0</td>
+          <td class="num">10</td>
+          <td class="progress">
+            <div class="bar-bg"><div class="bar" style="width:0.0%"></div></div>
+            <div class="pct">0.0%</div>
+          </td>
+        </tr>
+        
+        <tr class="behind">
+          <td class="camp">Luena</td>
+          <td class="num">10</td>
+          <td class="num">0</td>
+          <td class="num">10</td>
+          <td class="progress">
+            <div class="bar-bg"><div class="bar" style="width:0.0%"></div></div>
+            <div class="pct">0.0%</div>
+          </td>
+        </tr>
+        
+        <tr class="behind">
+          <td class="camp">Lusambno</td>
+          <td class="num">10</td>
+          <td class="num">0</td>
+          <td class="num">10</td>
+          <td class="progress">
+            <div class="bar-bg"><div class="bar" style="width:0.0%"></div></div>
+            <div class="pct">0.0%</div>
+          </td>
+        </tr>
+        
+        <tr class="behind">
+          <td class="camp">Lukwesa</td>
+          <td class="num">40</td>
+          <td class="num">1</td>
+          <td class="num">39</td>
+          <td class="progress">
+            <div class="bar-bg"><div class="bar" style="width:2.5%"></div></div>
+            <div class="pct">2.5%</div>
+          </td>
+        </tr>
+        
+        <tr class="behind">
+          <td class="camp">Katuta</td>
+          <td class="num">40</td>
+          <td class="num">10</td>
+          <td class="num">30</td>
+          <td class="progress">
+            <div class="bar-bg"><div class="bar" style="width:25.0%"></div></div>
+            <div class="pct">25.0%</div>
+          </td>
+        </tr>
+        
+        <tr class="behind">
+          <td class="camp">Mabumba</td>
+          <td class="num">20</td>
+          <td class="num">8</td>
+          <td class="num">12</td>
+          <td class="progress">
+            <div class="bar-bg"><div class="bar" style="width:40.0%"></div></div>
+            <div class="pct">40.0%</div>
+          </td>
+        </tr>
+        
+        </tbody>
+      </table>
+      <div class="footer">
+        <div>
+          <div>missing camp rows: <b>0</b></div>
+          <div>missing farmerid rows: <b>0</b></div>
+          
+        </div>
+        <div><a href="./luapula_progress.csv">CSV</a></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
