@@ -230,7 +230,7 @@ def render_html(df: pd.DataFrame, updated_at: str) -> str:
           <div>missing farmerid rows: <b>{miss_fid}</b></div>
           {unmapped_line}
         </div>
-        <div><a href="./progress.csv">CSV</a></div>
+        <div><a href="./luapula_progress.csv">CSV</a></div>
       </div>
     </div>
   </div>
