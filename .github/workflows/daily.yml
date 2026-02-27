@@ -29,7 +29,7 @@ jobs:
         env:
           KOBO_BASE_URL: ${{ secrets.KOBO_BASE_URL }}
           KOBO_TOKEN: ${{ secrets.KOBO_TOKEN }}
-          LUAPULA_ASSET_UID: ${{ secrets.LUAPULA_ASSET_UID }}
+          KOBO_ASSET_UID: ${{ secrets.LUAPULA_ASSET_UID }}
         run: uv run python src/luapula_progress.py
 
       - name: Commit & push if changed
