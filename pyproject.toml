@@ -1,0 +1,10 @@
+[project]
+name = "kobo-update"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=3.0.1",
+    "requests>=2.32.5",
+]
