@@ -244,7 +244,7 @@ def render_html(df: pd.DataFrame, updated_at: str) -> str:
 <body>
   <div class="wrap">
     <header>
-      <h1>Western Survey Progress（camp別）</h1>
+      <h1>Western Survey Progress</h1>
       <div class="meta">Last updated: {updated_at}</div>
     </header>
 
@@ -254,7 +254,7 @@ def render_html(df: pd.DataFrame, updated_at: str) -> str:
           <tr>
             <th>Camp</th>
             <th style="text-align:right;">Target</th>
-            <th style="text-align:right;">Collected（unique farmerid）</th>
+            <th style="text-align:right;">Collected</th>
             <th style="text-align:right;">Remaining</th>
             <th>Progress</th>
           </tr>
