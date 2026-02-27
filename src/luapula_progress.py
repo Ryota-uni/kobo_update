@@ -32,8 +32,8 @@ CAMP_LABEL_MAP = {
 # ---- paths ----
 TARGET_CSV_PATH = os.getenv("TARGET_CSV_PATH", "data/luapula_camps.csv")
 OUT_DIR = os.getenv("OUT_DIR", "docs")
-OUT_HTML = os.path.join(OUT_DIR, "index.html")
-OUT_CSV = os.path.join(OUT_DIR, "progress.csv")
+OUT_HTML = os.path.join(OUT_DIR, "luapula.html")
+OUT_CSV  = os.path.join(OUT_DIR, "luapula_progress.csv")
 
 
 def normalize_str(x: Any) -> Optional[str]:
