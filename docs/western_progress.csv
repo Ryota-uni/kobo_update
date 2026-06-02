@@ -1,5 +1,4 @@
 camp_label,target_n,collected_n,remaining_n,progress_pct,missing_camp_rows,missing_farmerid_rows,unmapped_camp_codes
-Nangili,10,0,10,0.0,0,0,
 Sitoya,10,4,6,40.0,0,0,
 Kama,7,4,3,57.142857142857146,0,0,
 Ushaa,11,7,4,63.63636363636363,0,0,
@@ -16,6 +15,7 @@ Limulunga South,13,13,0,100.0,0,0,
 Litawa,10,10,0,100.0,0,0,
 Nakanya,10,10,0,100.0,0,0,
 Namushakende,12,12,0,100.0,0,0,
+Nangili,10,10,0,100.0,0,0,
 Nasilimwe,13,13,0,100.0,0,0,
 Ndanda West,9,9,0,100.0,0,0,
 Sefula,6,6,0,100.0,0,0,
